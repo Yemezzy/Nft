@@ -167,7 +167,7 @@ const style = {
                 </li>
                 {/* 2 */}{" "}
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
-                  camara
+                  camera
                 </li>
                 {/* 3 */}{" "}
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
