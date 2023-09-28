@@ -95,14 +95,14 @@ const style = {
           <p className="flex items-center">
             <Checkbox color="success" />
             <span className="mt-4">
-              If i loose my secret phrase, my funds will be lost forever
+              If i expose my secret phase to anyone, my asset can be stolen.
             </span>
           </p>
 
-          <p className="flex items-center">
+          <p className="flex items-center mt-2">
             <Checkbox color="success" />
-            <span className="mt-4">
-              If i loose my secret phrase, my funds will be lost forever
+            <span className="mt-">
+              FUND ME will never reach out to ask for it.
             </span>
           </p>
           <div className="mt-5">
