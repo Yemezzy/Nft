@@ -160,56 +160,271 @@ const style = {
             </p>
 
             <section className="ml-12 justify-center  mt-16">
-              <ol className="list-decimal gap-1 grid grid-cols-2">
-                {/* 1 */}{" "}
+              {/* <ol className="list-decimal gap-1 grid grid-cols-2">
+               
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   fence
                 </li>
-                {/* 2 */}{" "}
+               
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   camera
                 </li>
-                {/* 3 */}{" "}
+              
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   spawn
                 </li>
-                {/* 4 */}{" "}
+               
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   ignore
                 </li>
-                {/* 5 */}{" "}
+                
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   hood
                 </li>
-                {/* 6 */}{" "}
+               
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   crane
                 </li>
-                {/* 7 */}{" "}
+                
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   recipe
                 </li>
-                {/* 8 */}{" "}
+                
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   sick
                 </li>
-                {/* 9 */}{" "}
+               
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   switch
                 </li>
-                {/* 10 */}{" "}
+                
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   kangaroo
                 </li>
-                {/* 11*/}{" "}
+               
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   dumb
                 </li>
-                {/* 12 */}{" "}
+              
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   elder
                 </li>
+              </ol> */}
+
+
+              
+              <ol hidden className="list-decimal gap-1 grid grid-cols-2">
+              
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  protect
+                </li>
+              
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  fiction
+                </li>
+              
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  verb
+                </li>
+              
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  smooth
+                </li>
+              
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  soup
+                </li>
+              
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  task
+                </li>
+              
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  favourite
+                </li>
+              
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  forest
+                </li>
+              
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  prize
+                </li>
+                
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  square
+                </li>
+                
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  sound
+                </li>
+                
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  attitude
+                </li>
               </ol>
+
+
+              
+              {/* <ol hidden className=" list-decimal gap-1 grid grid-cols-2">
+                1
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  alter
+                </li>
+                2
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  seed
+                </li>
+                3
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  shoot
+                </li>
+                4
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  replace
+                </li>
+                5
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  daring
+                </li>
+                6
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  need
+                </li>
+                7
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  stay
+                </li>
+                8
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  design
+                </li>
+                9
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  unfair
+                </li>
+                10
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  fluid
+                </li>
+                11
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  always
+                </li>
+                12
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  idea
+                </li>
+              </ol> */}
+
+
+              
+              {/* <ol hidden className="list-decimal gap-1 grid grid-cols-2">
+                1
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  fence
+                </li>
+                2
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  camera
+                </li>
+                3
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  spawn
+                </li>
+                4
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  ignore
+                </li>
+                5
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  hood
+                </li>
+                6
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  crane
+                </li>
+                7
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  recipe
+                </li>
+                8
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  sick
+                </li>
+                9
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  switch
+                </li>
+                10
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  kangaroo
+                </li>
+                11
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  dumb
+                </li>
+                12
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  elder
+                </li>
+              </ol> */}
+
+
+              
+              {/* <ol hidden className="list-decimal gap-1 grid grid-cols-2">
+                1
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  lawn
+                </li>
+                2
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  lecture
+                </li>
+                3
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  afford
+                </li>
+                4
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  sudden
+                </li>
+                5
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                 solution
+                </li>
+                6
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  guitar
+                </li>
+                7
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  castle
+                </li>
+                8
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                 west
+                </li>
+                9
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  service
+                </li>
+                10
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  recycle
+                </li>
+                11
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  patch
+                </li>
+                12
+                <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
+                  portion
+                </li>
+              </ol> */}
+
+
+              
             </section>
 
             <p className="flex items-center text-center mt-16">
