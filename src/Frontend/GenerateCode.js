@@ -53,7 +53,7 @@ const style = {
 
 
   return (
-    <div className="md:hidden block">
+    <div className=" block">
       <nav className="py-3 px-3 flex justify-between items-center shadow-md">
         <Link to="/Home">
           <p className="text-yellow-500 font-bold ">
@@ -67,16 +67,15 @@ const style = {
       </nav>
       <div className=" py-2 px-3">
         <p className="mt-5 text-lg font-semibold">Generate a staking wallet</p>
-
-        <div className="flex justify-center items-center mt-10">
+        <p className="mt-3 font-medium mr-5">
+          This Secret Phrase is the master key to your staking wallet.
+        </p>
+        <div className="md:block flex  items-center mt-10">
           <img
             src="https://easydrawingguides.com/wp-content/uploads/2021/12/how-to-draw-a-bank-vault-featured-image-1200.png"
             alt=""
-            className="w-[40%]"
+            className="md:w-[20%] w-[40%]"
           />
-          <p className="mt-3 font-medium mr-5">
-            This Secret Phrase is the master key to your staking wallet.
-          </p>
         </div>
 
         <p className="mt-10 text-gray-400 text-sm">
@@ -115,22 +114,22 @@ const style = {
         <p className="text-xl font-bold mt-10">Trusted Collaboration with</p>
         <div className="flex items-center">
           <img
-            className="w-[25%] h-[25%]  rounded-full"
+            className="w-[25%] md:w-[15%] h-[25%]  rounded-full"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/120px-MetaMask_Fox.svg.png"
             alt=""
           />
           <img
-            className="w-[27%] h-[27%]  rounded-full"
+            className="w-[27%] h-[27%] md:w-[15%] rounded-full"
             src="https://play-lh.googleusercontent.com/-3uTwEsZDk2NEgRblDEfIIY7T-xAZfJPN5JzVKz7s94Ds8KrKCrSVHvkEuneJlUBekc=w240-h480-rw"
             alt=""
           />
           <img
-            className="w-[20%] h-[20%] rounded-full"
+            className="w-[20%] md:w-[10%] h-[20%] rounded-full"
             src="https://play-lh.googleusercontent.com/PjoJoG27miSglVBXoXrxBSLveV6e3EeBPpNY55aiUUBM9Q1RCETKCOqdOkX2ZydqVf0=w240-h480-rw"
             alt=""
           />
           <img
-            className="w-[30%]  rounded-full"
+            className="md:w-[15%] w-[30%]  rounded-full"
             src="https://play-lh.googleusercontent.com/CcboHyK1Id9XQWa8HXb_81Rvgqy7J816OHiTcGlezcwC-tx4cnrrXPx1x6cR0PowqA=w240-h480-rw"
             alt=""
           />
@@ -161,58 +160,55 @@ const style = {
 
             <section className="ml-12 justify-center  mt-16">
               <ol className="list-decimal gap-1 grid grid-cols-2">
-               
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   fence
                 </li>
-               
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   camera
                 </li>
-              
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   spawn
                 </li>
-               
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   ignore
                 </li>
-                
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   hood
                 </li>
-               
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   crane
                 </li>
-                
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   recipe
                 </li>
-                
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   sick
                 </li>
-               
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   switch
                 </li>
-                
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   kangaroo
                 </li>
-               
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   dumb
                 </li>
-              
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   elder
                 </li>
               </ol>
 
-
-              
               {/* <ol hidden className="list-decimal gap-1 grid grid-cols-2">
               
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
@@ -264,8 +260,6 @@ const style = {
                 </li>
               </ol> */}
 
-
-              
               {/* <ol hidden className=" list-decimal gap-1 grid grid-cols-2">
                 1
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
@@ -317,8 +311,6 @@ const style = {
                 </li>
               </ol> */}
 
-
-              
               {/* <ol hidden className="list-decimal gap-1 grid grid-cols-2">
                 1
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
@@ -370,8 +362,6 @@ const style = {
                 </li>
               </ol> */}
 
-
-              
               {/* <ol hidden className="list-decimal gap-1 grid grid-cols-2">
                 1
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
@@ -422,9 +412,6 @@ const style = {
                   portion
                 </li>
               </ol> */}
-
-
-              
             </section>
 
             <p className="flex items-center text-center mt-16">
