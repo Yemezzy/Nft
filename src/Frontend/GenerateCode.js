@@ -114,7 +114,7 @@ const style = {
         <p className="text-xl font-bold mt-10">Trusted Collaboration with</p>
         <div className="flex items-center">
           <img
-            className="w-[25%] md:w-[15%] h-[25%]  rounded-full"
+            className="w-[25%] md:w-[12%] h-[25%]  rounded-full"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/120px-MetaMask_Fox.svg.png"
             alt=""
           />
