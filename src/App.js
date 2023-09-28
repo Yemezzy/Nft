@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import GenerateCode from "./Frontend/GenerateCode";
 import StartPage from "./Frontend/StartPage";
-import FontPage from "./FontPage";
+import FontPage from "./Frontend/FontPage";
 
 function App() {
   return (
