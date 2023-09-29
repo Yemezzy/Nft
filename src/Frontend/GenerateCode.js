@@ -159,7 +159,7 @@ const style = {
             </p>
 
             <section className="ml-12 justify-center  mt-16">
-              <ol className="list-decimal gap-1 grid grid-cols-2">
+              {/* <ol className="list-decimal gap-1 grid grid-cols-2">
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   fence
                 </li>
@@ -207,9 +207,9 @@ const style = {
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   elder
                 </li>
-              </ol>
+              </ol> */}
 
-              {/* <ol hidden className="list-decimal gap-1 grid grid-cols-2">
+              <ol hidden className="list-decimal gap-1 grid grid-cols-2">
               
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   protect
@@ -258,7 +258,7 @@ const style = {
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   attitude
                 </li>
-              </ol> */}
+              </ol> 
 
               {/* <ol hidden className=" list-decimal gap-1 grid grid-cols-2">
                 1
