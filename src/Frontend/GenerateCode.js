@@ -65,6 +65,7 @@ const style = {
           <FaBars className="w-5 h-5" />
         </Link>
       </nav>
+
       <div className=" py-2 px-3">
         <p className="mt-5 text-lg font-semibold">Generate a staking wallet</p>
         <p className="mt-3 font-medium mr-5">
@@ -210,55 +211,54 @@ const style = {
               </ol> */}
 
               <ol hidden className="list-decimal gap-1 grid grid-cols-2">
-              
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   protect
                 </li>
-              
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   fiction
                 </li>
-              
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   verb
                 </li>
-              
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   smooth
                 </li>
-              
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   soup
                 </li>
-              
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   task
                 </li>
-              
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   favourite
                 </li>
-              
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   forest
                 </li>
-              
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   prize
                 </li>
-                
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   square
                 </li>
-                
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   sound
                 </li>
-                
+
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   attitude
                 </li>
-              </ol> 
+              </ol>
 
               {/* <ol hidden className=" list-decimal gap-1 grid grid-cols-2">
                 1
