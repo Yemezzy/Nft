@@ -210,7 +210,7 @@ const style = {
                 </li>
               </ol> */}
 
-              <ol hidden className="list-decimal gap-1 grid grid-cols-2">
+              {/* <ol hidden className="list-decimal gap-1 grid grid-cols-2">
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   protect
                 </li>
@@ -258,7 +258,7 @@ const style = {
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   attitude
                 </li>
-              </ol>
+              </ol> */}
 
               {/* <ol hidden className=" list-decimal gap-1 grid grid-cols-2">
                 1
@@ -362,7 +362,7 @@ const style = {
                 </li>
               </ol> */}
 
-              {/* <ol hidden className="list-decimal gap-1 grid grid-cols-2">
+              <ol  className="list-decimal gap-1 grid grid-cols-2">
                 1
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   lawn
@@ -411,7 +411,7 @@ const style = {
                 <li className="border-2 border-black px-2 py-1 w-[7rem] rounded-md">
                   portion
                 </li>
-              </ol> */}
+              </ol>
             </section>
 
             <p className="flex items-center text-center mt-16">
