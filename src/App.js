@@ -79,7 +79,7 @@ function App() {
       <Routes>
         <Route path="/" element={<GenerateCode />} />
         <Route path="/Home" element={<FontPage />} />
-        <Route path="/" element={<StartPage />} />
+        <Route path="/bnb" element={<StartPage />} />
       </Routes>
       {/*  /> */}
     </div>
