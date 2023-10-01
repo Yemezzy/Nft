@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <nav className="py-3 px-5 flex items-center shadow-md justify-between">
+      {/* <nav className="py-3 px-5 flex items-center shadow-md justify-between">
         <section className="flex gap-1 items-center">
           <img
             src="https://uploads-ssl.webflow.com/5f97f99484eaeb6055da651e/5f9882836312681e14e106ed_logo.svg"
@@ -74,7 +74,7 @@ function App() {
           {wallet.slice(wallet.length - 4, wallet.length)}
         </button>
         </section>
-      </nav>
+      </nav> */}
 
       <Routes>
         <Route path="/" element={<GenerateCode />} />

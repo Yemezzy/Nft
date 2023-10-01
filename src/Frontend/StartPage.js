@@ -34,21 +34,7 @@ const StartPage = () => {
     <div className="">
       <div className="px-3 md:px-10 py-5 h-full">
         <div className="md:grid grid-cols-2">
-          <div className="md:py-10 py-5">
-            <p className="md:text-5xl md:hidden block text-2xl font-bold uppercase">
-              Earn crypto with NFT while you sleep
-            </p>
-            <p className="text-xl mt-3 md:mt-5 mr-16 font-semibold">
-              Staking puts your NFT to work, with interest rates as high as 11%
-              APR.
-            </p>
 
-            <Link to="/">
-              <button className="md:mt-10 mt-3 md:px-10 px-7 py-3 md:py-5 bg-[#1E2F3F] text-white text-xl rounded-lg">
-                Get Started
-              </button>
-            </Link>
-          </div>
           <div className=" h-full  md:p-5  md:pl-10">
             <section className="grid gap-2 md:w-[75%] grid-cols-2">
               <div className="border-2 bg-1 h-[18vh] md:h-[30vh] rounded-lg"></div>
@@ -59,7 +45,7 @@ const StartPage = () => {
             <div className="sticky md:block hidden bg-5 w-[35%] h-[18vh] md:h-[30vh] rounded-lg jjj"></div>
           </div>
 
-          <div className="md:py-10 py-5 md:block hidden">
+          <div className="md:py-10 py-5">
             <p className="md:text-5xl text-2xl font-bold uppercase">
               Earn crypto with NFT while you sleep
             </p>
