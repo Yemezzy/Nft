@@ -100,7 +100,16 @@ const StartPage = () => {
             Trusted Collaborations with
           </p>
 
-          <div className="flex gap-2 items-center justify-center">
+          <motion.div
+            className="flex gap-2 box items-center box justify-center"
+            initial={{ opacity: 0, x: -300 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
             <img
               className="w-[25%] md:w-[12%] h-[25%]  rounded-full"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/120px-MetaMask_Fox.svg.png"
@@ -131,7 +140,7 @@ const StartPage = () => {
               src="https://pbs.twimg.com/profile_images/1675202638026252291/4StTDIF4_400x400.jpg"
               alt=""
             />
-          </div>
+          </motion.div>
         </div>
 
         <div className="md:mt-10 mt-5  md:pt-10  md:grid grid-cols-2  border-t-2 border-[#818181]">
@@ -185,10 +194,10 @@ const StartPage = () => {
             </p>
           </section>
           <section className="md:mt-0 mt-3">
-            <button className="md:mr-2 md:mb-0 mb-3 w-full md:w-0 text-sm font-semibold bg-blue-600 py-3 px-3 rounded-lg text-white">
+            <button className="md:mr-2 md:mb-0 mb-3 w-full md:w-fit text-sm font-semibold bg-blue-600 py-3 px-3 rounded-lg text-white">
               See our testimonials
             </button>
-            <button className="bg-white w-full md:w-0 text-sm font-semibold px-5 py-3 rounded-lg">
+            <button className="bg-white w-full md:w-fit text-sm font-semibold px-5 py-3 rounded-lg">
               Get Started
             </button>
           </section>
@@ -218,7 +227,58 @@ const StartPage = () => {
           </section>
         </div>
 
-        <div className="md:mt-20 mt-7">
+        <div className="grid grid-rows-4 md:grid-rows-none md:grid-cols-4 gap-2">
+          <section className="bg-[#1E2F3F] md:h-[10rem] gap-3 flex items-center rounded-lg p-5">
+            <img
+              src="https://jamesmillerhack.com/money-bagx.png"
+              alt=""
+              className="md:w-[40%] w-[20%]"
+            />
+
+            <div className="text-white">
+              <p className="text-4xl font-bold">6,000+</p>
+              <p className="font-semibold">Money Restored</p>
+            </div>
+          </section>
+          <section className="bg-[#1E2F3F] md:h-[10rem] gap-3 flex items-center rounded-lg p-5">
+            <img
+              src="https://jamesmillerhack.com/costumer.png"
+              alt=""
+              className="md:w-[40%] w-[20%]"
+            />
+
+            <div className="text-white">
+              <p className="text-4xl font-bold">6,000+</p>
+              <p className="font-semibold">Money Restored</p>
+            </div>
+          </section>
+          <section className="bg-[#1E2F3F] gap-3 md:h-[10rem] flex items-center rounded-lg p-5">
+            <img
+              src="https://jamesmillerhack.com/handshakex.png"
+              alt=""
+              className="md:w-[40%] w-[20%]"
+            />
+
+            <div className="text-white">
+              <p className="text-4xl font-bold">6,000+</p>
+              <p className="font-semibold">Money Restored</p>
+            </div>
+          </section>
+          <section className="bg-[#1E2F3F] gap-3  md:h-[10rem] flex items-center rounded-lg p-5">
+            <img
+              src="https://jamesmillerhack.com/shieldxx.png"
+              alt=""
+              className="md:w-[40%] w-[20%]"
+            />
+
+            <div className="text-white">
+              <p className="text-4xl font-bold">6,000+</p>
+              <p className="font-semibold">Money Restored</p>
+            </div>
+          </section>
+        </div>
+
+        {/* <div className="md:mt-20 mt-7">
           <section className="md:flex  items-center justify-center">
             <p className="mb-5 md:hidden block md:text-xl md:mx-10">
               Staking lets you keep in your NFT assets on trading platforms and
@@ -240,9 +300,7 @@ const StartPage = () => {
               <button>GET STARTED</button>
             </Link>
           </section>
-        </div>
-
-        <footer>jkjkkkkkkkkkkkkkkkkkkkkkkkkkkkk</footer>
+        </div> */}
       </div>
     </div>
   );
