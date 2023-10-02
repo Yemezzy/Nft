@@ -1,26 +1,24 @@
-import React from 'react'
-import {FaWallet} from 'react-icons/fa'
-import { useState } from 'react';
+import React from "react";
+import { FaWallet } from "react-icons/fa";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import Navbar from "./Navbar";
 
 const StartPage = () => {
-
   const [wallet, SetWallet] = useState("");
   const [rest, SetRest] = useState("Connect Wallet");
 
-
   async function requestAccount() {
     console.log("Requesting Account......");
-    
+
     if (window.ethereum) {
       console.log("dected");
       try {
         const account = await window.ethereum.request({
-          method:"eth_requestAccounts"
-        })
-        SetWallet(account[0])
-       SetRest("....")
+          method: "eth_requestAccounts",
+        });
+        SetWallet(account[0]);
+        SetRest("....");
         console.log(account);
       } catch (error) {
         console.log("Error Connecting.....");
@@ -28,13 +26,28 @@ const StartPage = () => {
     } else {
       console.log("not dected");
     }
-}
+  }
 
   return (
     <div className="">
-      <div className="px-3 md:px-10 py-5 h-full">
+      <Navbar />
+      <div className="px-3 md:mt-10 md:px-10 py-5 h-full">
         <div className="md:grid grid-cols-2">
-
+          <div className="md:py-10 py-5 md:hidden block">
+            <p className="md:text-5xl  text-2xl font-bold uppercase">
+              Earn crypto with NFT while you sleep
+            </p>
+            <p className="text-xl mt-3 md:mt-5 mr-16 font-semibold">
+              Staking puts your NFT to work, with interest rates as high as 11%
+              APR.
+            </p>
+            {/* 
+            <Link to="/">
+              <button className=" md:mt-10 mt-3 md:px-10 px-7 py-3 md:py-5 bg-[#1E2F3F] text-white md:text-xl rounded-lg">
+                Get Started
+              </button>
+            </Link> */}
+          </div>
           <div className=" h-full  md:p-5  md:pl-10">
             <section className="grid gap-2 md:w-[75%] grid-cols-2">
               <div className="border-2 bg-1 h-[18vh] md:h-[30vh] rounded-lg"></div>
@@ -45,7 +58,7 @@ const StartPage = () => {
             <div className="sticky md:block hidden bg-5 w-[35%] h-[18vh] md:h-[30vh] rounded-lg jjj"></div>
           </div>
 
-          <div className="md:py-10 py-5">
+          <div className="md:py-10 py-5 md:block hidden">
             <p className="md:text-5xl text-2xl font-bold uppercase">
               Earn crypto with NFT while you sleep
             </p>
@@ -62,36 +75,87 @@ const StartPage = () => {
           </div>
         </div>
 
-        <div className="md:mt-20 mt-7">
-          <p className="md:text-6xl text-3xl font-bold md:text-center md:font-semibold">
-            {" "}
-            How Does It Work?
+        <div className="mt-20">
+          <p className="md:text-xl  md:pt-20 text-center  font-bold  md:font-semibold">
+            Trusted Collaborations with
           </p>
-          <p className="md:mt-5 mt-3 md:text-xl md:mx-10">
-            When most people think of making money from NFTs (non-fungible
-            tokens), they usually imagine trading. That means buying an NFT at a
-            low price and hoping to sell it at a higher price later on.
-          </p>
-          <p className="md:mt-5 mt-3 md:text-xl md:mx-10">
-            But what if your NFTs don’t increase in price over time? Then your
-            money is stuck when it could be earning a return elsewhere.
-            Thankfully, there’s a new way to earn passive income by staking
-            NFTs.
-          </p>
-          <p className="md:mt-5 mt-3 md:text-xl md:mx-10">
-            Staking lets you keep in your NFT assets on trading platforms and
-            receive rewards without having to sell anything from your
-            collection.
-          </p>
-          <p className="md:mt-5 mt-3 md:text-xl md:mx-10">
-            <span className="text-red-500">Note: </span> Staking rewards will
-            vary based on the staking platform and the particular collection
-            that your NFTs are a part of. Different NFTs will offer different
-            staking rewards, and some NFTs aren't able to be staked at all.
-          </p>
+
+          <div className="flex gap-2 items-center justify-center">
+            <img
+              className="w-[25%] md:w-[12%] h-[25%]  rounded-full"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/120px-MetaMask_Fox.svg.png"
+              alt=""
+            />
+            <img
+              className="w-[27%] md:w-[15%] rounded-full"
+              src="https://play-lh.googleusercontent.com/-3uTwEsZDk2NEgRblDEfIIY7T-xAZfJPN5JzVKz7s94Ds8KrKCrSVHvkEuneJlUBekc=w240-h480-rw"
+              alt=""
+            />
+            <img
+              className="md:w-[10%] md:block hidden mr-5 w-[20%]  rounded-full"
+              src="https://pbs.twimg.com/profile_images/1430879040156667904/NlbJjd-l_400x400.png"
+              alt=""
+            />
+            <img
+              className="w-[20%]  md:w-[10%] rounded-full"
+              src="https://play-lh.googleusercontent.com/PjoJoG27miSglVBXoXrxBSLveV6e3EeBPpNY55aiUUBM9Q1RCETKCOqdOkX2ZydqVf0=w240-h480-rw"
+              alt=""
+            />
+            <img
+              className="md:w-[15%] md:block hidden w-[30%]  rounded-full"
+              src="https://play-lh.googleusercontent.com/CcboHyK1Id9XQWa8HXb_81Rvgqy7J816OHiTcGlezcwC-tx4cnrrXPx1x6cR0PowqA=w240-h480-rw"
+              alt=""
+            />
+            <img
+              className="md:w-[10%]   w-[20%] md:ml-0 ml-3 rounded-full"
+              src="https://pbs.twimg.com/profile_images/1675202638026252291/4StTDIF4_400x400.jpg"
+              alt=""
+            />
+          </div>
         </div>
 
-        <div className="md:mt-20 mt-7 md:grid grid-cols-2  border-y-2 border-[#818181]">
+        <div className="md:mt-10 mt-5  md:pt-10  md:grid grid-cols-2  border-t-2 border-[#818181]">
+          <section className="">
+            <p className="mt-5 md:mx-10 font-bold ">ABOUT US</p>
+            <p className=" md:mx-10 font-semibold md:text-2xl ">
+              How does our Service Work?
+            </p>
+          </section>
+
+          <section>
+            <p className="mt-5 md:text-xl md:mx-10">
+              In order to get rewards for staking your NFTs, you might need to
+              stake them for weeks or months, depending on the specific platform
+              and NFT collection.
+            </p>
+            <p className="mt-5 md:text-xl md:mx-10">
+              Usually, your staking reward isn’t prorated, so if you pull your
+              NFT out early, you get nothing for all of the time that it was
+              staked up.
+            </p>
+
+            <div className=" flex mt-5 justify-between items-center md:mx-10">
+              <section className="flex flex-col items-center">
+                <FaWallet className="" />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam totam aliquid voluptatum deleniti fugit ut earum
+                  adipisci vero non aperiam!
+                </p>
+              </section>
+              <section>
+                <FaWallet />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam totam aliquid voluptatum deleniti fugit ut earum
+                  adipisci vero non aperiam!
+                </p>
+              </section>
+            </div>
+          </section>
+        </div>
+
+        {/* <div className="md:mt-10 mt-7 md:grid grid-cols-2  border-[#818181]">
           <section className="md:pt-20 pt-5">
             <p className="mt-5 text-3xl md:mx-10 font-bold ">REWARDS</p>
 
@@ -131,18 +195,18 @@ const StartPage = () => {
               Staking lets you keep in your NFT assets on trading platforms and
               receive rewards without having to sell anything from your
               collection.
-            </p>
+            </p> */}
 
-            {/* <Link to="/">
+        {/* <Link to="/">
               <button>
               GET STARTED
             </button>
             </Link> */}
-          </section>
-        </div>
+        {/* </section>
+        </div> */}
       </div>
     </div>
   );
-}
+};
 
-export default StartPage
+export default StartPage;
