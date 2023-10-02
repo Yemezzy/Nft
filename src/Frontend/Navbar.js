@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaWallet } from "react-icons/fa";
+import { FaBars, FaWallet } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -59,7 +59,9 @@ const Navbar = () => {
             <Link to="/About ">
               <li>Calculator</li>
             </Link>
-          </ul>
+                  </ul>
+                  
+                  <FaBars/>
           {/* <button
           className="text-white font-bold bg-[#1E2F3F] flex gap-1 items-center p-2 text-sm rounded-md"
           onClick={requestAccount}

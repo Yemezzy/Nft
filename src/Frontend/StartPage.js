@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaWallet } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -30,10 +31,20 @@ const StartPage = () => {
 
   return (
     <div className="">
+      <motion.div className="box" />
       <Navbar />
       <div className="px-3 md:mt-10 md:px-10 py-5 h-full">
         <div className="md:grid grid-cols-2">
-          <div className="md:py-10 py-5 md:hidden block">
+          <motion.div
+            className="md:py-10 box py-5 md:hidden block"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
             <p className="md:text-5xl  text-2xl font-bold uppercase">
               Earn crypto with NFT while you sleep
             </p>
@@ -47,7 +58,7 @@ const StartPage = () => {
                 Get Started
               </button>
             </Link> */}
-          </div>
+          </motion.div>
           <div className=" h-full  md:p-5  md:pl-10">
             <section className="grid gap-2 md:w-[75%] grid-cols-2">
               <div className="border-2 bg-1 h-[18vh] md:h-[30vh] rounded-lg"></div>
@@ -58,7 +69,16 @@ const StartPage = () => {
             <div className="sticky md:block hidden bg-5 w-[35%] h-[18vh] md:h-[30vh] rounded-lg jjj"></div>
           </div>
 
-          <div className="md:py-10 py-5 md:block hidden">
+          <motion.div
+            className="md:py-10 py-5 md:block hidden box"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
             <p className="md:text-5xl text-2xl font-bold uppercase">
               Earn crypto with NFT while you sleep
             </p>
@@ -72,7 +92,7 @@ const StartPage = () => {
                 Get Started
               </button>
             </Link>
-          </div>
+          </motion.div>
         </div>
 
         <div className="mt-20">
@@ -123,29 +143,29 @@ const StartPage = () => {
           </section>
 
           <section>
-            <p className="mt-5 md:text-xl md:mx-10">
+            <p className="mt-5 md:text-lg md:mx-10">
               In order to get rewards for staking your NFTs, you might need to
               stake them for weeks or months, depending on the specific platform
               and NFT collection.
             </p>
-            <p className="mt-5 md:text-xl md:mx-10">
+            <p className="mt-5 md:text-lg md:mx-10">
               Usually, your staking reward isn’t prorated, so if you pull your
               NFT out early, you get nothing for all of the time that it was
               staked up.
             </p>
 
-            <div className=" flex mt-5 justify-between items-center md:mx-10">
-              <section className="flex flex-col items-center">
-                <FaWallet className="" />
-                <p>
+            <div className=" md:flex mt-5  gap-2  justify-between items-center md:mx-10">
+              <section className="flex flex-col mt-10 md:mt-0 items-center">
+                <FaWallet className="w-7 h-7 mb-5" />
+                <p className="md:text-lg">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Quisquam totam aliquid voluptatum deleniti fugit ut earum
                   adipisci vero non aperiam!
                 </p>
               </section>
-              <section>
-                <FaWallet />
-                <p>
+              <section className="flex flex-col mt-10 md:mt-0 items-center">
+                <FaWallet className="w-7 h-7 mb-5" />
+                <p className="md:text-lg">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Quisquam totam aliquid voluptatum deleniti fugit ut earum
                   adipisci vero non aperiam!
@@ -155,7 +175,26 @@ const StartPage = () => {
           </section>
         </div>
 
-        {/* <div className="md:mt-10 mt-7 md:grid grid-cols-2  border-[#818181]">
+        <div className="w-full md:flex items-center py-5 md:py-0 justify-between px-5 md:px-10 md:h-[10rem] bg-[#1E2F3F] mt-10 rounded-lg">
+          <section>
+            <p className="text-white font-bold text-xl md:text-2xl">
+              Your keys, back in your pocket
+            </p>
+            <p className="text-white md:text-base text-sm">
+              Your keys, back in your pocket
+            </p>
+          </section>
+          <section className="md:mt-0 mt-3">
+            <button className="md:mr-2 md:mb-0 mb-3 w-full md:w-0 text-sm font-semibold bg-blue-600 py-3 px-3 rounded-lg text-white">
+              See our testimonials
+            </button>
+            <button className="bg-white w-full md:w-0 text-sm font-semibold px-5 py-3 rounded-lg">
+              Get Started
+            </button>
+          </section>
+        </div>
+
+        <div className="md:mt-10 mt-7 md:grid grid-cols-2  border-[#818181]">
           <section className="md:pt-20 pt-5">
             <p className="mt-5 text-3xl md:mx-10 font-bold ">REWARDS</p>
 
@@ -195,15 +234,15 @@ const StartPage = () => {
               Staking lets you keep in your NFT assets on trading platforms and
               receive rewards without having to sell anything from your
               collection.
-            </p> */}
+            </p>
 
-        {/* <Link to="/">
-              <button>
-              GET STARTED
-            </button>
-            </Link> */}
-        {/* </section>
-        </div> */}
+            <Link to="/">
+              <button>GET STARTED</button>
+            </Link>
+          </section>
+        </div>
+
+        <footer>jkjkkkkkkkkkkkkkkkkkkkkkkkkkkkk</footer>
       </div>
     </div>
   );
