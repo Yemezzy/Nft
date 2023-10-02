@@ -219,7 +219,7 @@ const StartPage = () => {
             </p>
           </section>
 
-          <section>
+          <section className="md:block hidden">
             <img
               src="https://trustwallet.com/assets/images/collectibles_preview2.png"
               alt=""
