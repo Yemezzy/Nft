@@ -236,7 +236,7 @@ const StartPage = () => {
             />
 
             <div className="text-white">
-              <p className="text-4xl font-bold">6,000+</p>
+              <p className="md:text-4xl text-2xl font-bold">6,000+</p>
               <p className="font-semibold">Money Restored</p>
             </div>
           </section>
@@ -248,7 +248,7 @@ const StartPage = () => {
             />
 
             <div className="text-white">
-              <p className="text-4xl font-bold">6,000+</p>
+              <p className="md:text-4xl text-2xl font-bold">6,000+</p>
               <p className="font-semibold">Money Restored</p>
             </div>
           </section>
@@ -260,7 +260,7 @@ const StartPage = () => {
             />
 
             <div className="text-white">
-              <p className="text-4xl font-bold">6,000+</p>
+              <p className="md:text-4xl text-2xl font-bold">6,000+</p>
               <p className="font-semibold">Money Restored</p>
             </div>
           </section>
@@ -272,7 +272,7 @@ const StartPage = () => {
             />
 
             <div className="text-white">
-              <p className="text-4xl font-bold">6,000+</p>
+              <p className="md:text-4xl text-2xl font-bold">6,000+</p>
               <p className="font-semibold">Money Restored</p>
             </div>
           </section>
