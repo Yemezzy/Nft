@@ -3,6 +3,11 @@ import { motion } from "framer-motion";
 import { FaWallet } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Navbar from "./Navbar";
 
 const StartPage = () => {
@@ -204,7 +209,7 @@ const StartPage = () => {
         </div>
 
         <div className="md:mt-10 mt-7 md:grid grid-cols-2  border-[#818181]">
-          <section className="md:pt-20 pt-5">
+          <section className="md:pt-20 py-5">
             <p className="mt-5 text-3xl md:mx-10 font-bold ">REWARDS</p>
 
             <p className="mt-5 md:text-xl md:mx-10">
@@ -236,8 +241,8 @@ const StartPage = () => {
             />
 
             <div className="text-white">
-              <p className="md:text-4xl text-2xl font-bold">6,000+</p>
-              <p className="font-semibold">Money Restored</p>
+              <p className="md:text-4xl text-2xl font-bold">56,000+</p>
+              <p className="font-semibold">Staking Rewards</p>
             </div>
           </section>
           <section className="bg-[#1E2F3F] md:h-[10rem] gap-3 flex items-center rounded-lg p-5">
@@ -249,7 +254,7 @@ const StartPage = () => {
 
             <div className="text-white">
               <p className="md:text-4xl text-2xl font-bold">6,000+</p>
-              <p className="font-semibold">Money Restored</p>
+              <p className="font-semibold">Users</p>
             </div>
           </section>
           <section className="bg-[#1E2F3F] gap-3 md:h-[10rem] flex items-center rounded-lg p-5">
@@ -260,11 +265,11 @@ const StartPage = () => {
             />
 
             <div className="text-white">
-              <p className="md:text-4xl text-2xl font-bold">6,000+</p>
-              <p className="font-semibold">Money Restored</p>
+              <p className="md:text-4xl text-2xl font-bold">15,000+</p>
+              <p className="font-semibold">Staked Assets</p>
             </div>
           </section>
-          <section className="bg-[#1E2F3F] gap-3  md:h-[10rem] flex items-center rounded-lg p-5">
+          <section className="bg-[#1E2F3F] gap-2  md:h-[10rem] flex items-center rounded-lg p-5">
             <img
               src="https://jamesmillerhack.com/shieldxx.png"
               alt=""
@@ -272,12 +277,118 @@ const StartPage = () => {
             />
 
             <div className="text-white">
-              <p className="md:text-4xl text-2xl font-bold">6,000+</p>
-              <p className="font-semibold">Money Restored</p>
+              <p className="md:text-4xl text-2xl font-bold">12,000+</p>
+              <p className="font-semibold">Trusted Investors</p>
             </div>
           </section>
         </div>
 
+        <div className="md:mt-10 mt-7 ">
+          <p className="md:text-4xl text-2xl font-bold md:pt-10">Support</p>
+          <p className="mt-5 md:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            tempora mollitia fugiat rerum nemo maxime commodi totam cumque
+            inventore officiis. Provident dolor quidem a soluta quia deserunt
+            pariatur eaque ipsam, culpa quam sapiente voluptatum suscipit eius
+            veniam fugiat, tempore nostrum unde incidunt, reiciendis labore
+            magnam sunt minus quo. Nostrum, aut!
+          </p>
+          <p className="text-red-600 md:text-right mt-3 md:mt-5 md:text-xl">
+            Contact Support:{" "}
+            <a
+              href=""
+              className="md:text-base text-sm font-semibold underline text-blue-600 uppercase mx-3"
+            >
+              Telegram
+            </a>
+            <a
+              href=""
+              className="md:text-base text-sm font-semibold underline text-blue-600 uppercase"
+            >
+              {" "}
+              Discord
+            </a>
+          </p>
+        </div>
+
+        <div>
+          <p className="text-center font-bold text-xl mt-10">
+            Frequently Ask Questions
+          </p>
+          <p className="text-center font-bold text-3xl">F .A. Q</p>
+
+          <div></div>
+          <div className="grid mt-10 grid-rows-4 md:mt-20 gap-3 md:grid-cols-2">
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>How does it work?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Can I trust you?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>What types of NFT can be Staked?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Do I need to tell you all my passwords?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </div>
+        </div>
+        <footer></footer>
         {/* <div className="md:mt-20 mt-7">
           <section className="md:flex  items-center justify-center">
             <p className="mb-5 md:hidden block md:text-xl md:mx-10">

@@ -61,7 +61,7 @@ const Navbar = () => {
             </Link>
                   </ul>
                   
-                  <FaBars/>
+                  <FaBars className='md:hidden block'/>
           {/* <button
           className="text-white font-bold bg-[#1E2F3F] flex gap-1 items-center p-2 text-sm rounded-md"
           onClick={requestAccount}
