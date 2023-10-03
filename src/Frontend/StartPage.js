@@ -431,7 +431,7 @@ const StartPage = () => {
           </section>
         </div> */}
       </div>
-      <footer className="bg-[#1E2F3F] mt-20 p-10">
+      <footer className="bg-[#1E2F3F] mt-20 p-5">
         <div className=" w-full  md:grid grid-cols-3 justify-between">
           <div>
             <p className="md:text-lg text-white font-medium">Useful Links</p>
@@ -457,11 +457,11 @@ const StartPage = () => {
             <p className="mt-7 text-start md:ml-10 md:text-lg font-bold">
               Subscribe
             </p>
-            <div className="md:justify-center  w-full flex ">
+            <div className="md:justify-center bg-white rounded-md  w-full flex ">
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="w-[60%] rounded-s-md text-black outline-none border-none py-2 px-2"
+                className="md:w-[60%] w-full rounded-s-md text-black outline-none border-none py-2 px-2"
               />
               <button className="font-medium bg-blue-600 p-2 rounded-e-md">
                 Subscribe
