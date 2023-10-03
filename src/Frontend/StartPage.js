@@ -318,7 +318,7 @@ const StartPage = () => {
           <p className="text-center font-bold text-3xl">F .A. Q</p>
 
           <div></div>
-          <div className="grid mt-10 md:grid-rows-none grid-cols-none grid-rows-4 gap-3 md:grid-cols-2">
+          <div className="md:grid mt-10  gap-3 md:grid-cols-2">
             <section className="h-fit">
               <Accordion>
                 <AccordionSummary
@@ -341,7 +341,7 @@ const StartPage = () => {
               </Accordion>
             </section>
 
-            <section className="h-fit font-bold">
+            <section className="h-fit font-bold mt-2 md:mt-0">
               <Accordion>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
@@ -362,7 +362,7 @@ const StartPage = () => {
               </Accordion>
             </section>
 
-            <section className="h-fit">
+            <section className="h-fit mt-2 md:mt-0">
               <Accordion>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
@@ -386,7 +386,7 @@ const StartPage = () => {
               </Accordion>
             </section>
 
-            <section className="h-fit">
+            <section className="h-fit mt-2 md:mt-0">
               <Accordion>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
