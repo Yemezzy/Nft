@@ -341,7 +341,7 @@ const StartPage = () => {
               </Accordion>
             </section>
 
-            <section className="h-fit font-bold mt-2 md:mt-0">
+            <section className="h-fit font-bold mt-3 md:mt-0">
               <Accordion>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
@@ -362,7 +362,7 @@ const StartPage = () => {
               </Accordion>
             </section>
 
-            <section className="h-fit mt-2 md:mt-0">
+            <section className="h-fit mt-3 md:mt-0">
               <Accordion>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
@@ -386,7 +386,7 @@ const StartPage = () => {
               </Accordion>
             </section>
 
-            <section className="h-fit mt-2 md:mt-0">
+            <section className="h-fit mt-3 md:mt-0">
               <Accordion>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
@@ -431,7 +431,7 @@ const StartPage = () => {
           </section>
         </div> */}
       </div>
-      <footer className="bg-[#1E2F3F] mt-20 p-5">
+      <footer className="bg-[#1E2F3F] mt-20 p-5 pt-7">
         <div className=" w-full  md:grid grid-cols-3 justify-between">
           <div>
             <p className="md:text-lg text-white font-medium">Useful Links</p>
