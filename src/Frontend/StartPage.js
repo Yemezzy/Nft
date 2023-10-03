@@ -169,7 +169,7 @@ const StartPage = () => {
             </p>
 
             <div className=" md:flex mt-5  gap-2  justify-between items-center md:mx-10">
-              <section className="flex flex-col mt-10 md:mt-0 items-center">
+              <section className="flex flex-col mt-5 md:mt-0 items-center">
                 <FaWallet className="w-7 h-7 mb-5" />
                 <p className="md:text-lg">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -177,7 +177,7 @@ const StartPage = () => {
                   adipisci vero non aperiam!
                 </p>
               </section>
-              <section className="flex flex-col mt-10 md:mt-0 items-center">
+              <section className="flex flex-col mt-5 md:mt-0 items-center">
                 <FaWallet className="w-7 h-7 mb-5" />
                 <p className="md:text-lg">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -326,7 +326,31 @@ const StartPage = () => {
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
-                  <Typography>How does it work?</Typography>
+                  <Typography>
+                    {" "}
+                    <p className="font-semibold">How does it work?</p>
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse malesuada lacus ex, sit amet blandit leo
+                    lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            </section>
+
+            <section className="h-fit font-bold">
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography>
+                    <p className="font-semibold">Can I trust you?</p>
+                  </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
@@ -345,7 +369,12 @@ const StartPage = () => {
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
-                  <Typography>Can I trust you?</Typography>
+                  <Typography>
+                    {" "}
+                    <p className="font-semibold">
+                      What types of NFT can be Staked?
+                    </p>
+                  </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
@@ -364,27 +393,10 @@ const StartPage = () => {
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
-                  <Typography>What types of NFT can be Staked?</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
                   <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            </section>
-
-            <section className="h-fit">
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                >
-                  <Typography>
-                    Do I need to tell you all my passwords?
+                    <p className="font-semibold">
+                      Do I need to tell you all my passwords?
+                    </p>
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -398,7 +410,7 @@ const StartPage = () => {
             </section>
           </div>
         </div>
-        <footer></footer>
+
         {/* <div className="md:mt-20 mt-7">
           <section className="md:flex  items-center justify-center">
             <p className="mb-5 md:hidden block md:text-xl md:mx-10">
@@ -406,11 +418,7 @@ const StartPage = () => {
               receive rewards without having to sell anything from your
               collection.
             </p>
-            <img
-              className="md:w-[70%] rounded-md"
-              src="https://uploads-ssl.webflow.com/5f97f994ec86e8c0ddab6823/63288eed17c95ddd8dbf9abd_image2_2_11zon_5949c8907b839ff4c0e366a9696defd6_2000-p-1080.jpeg"
-              alt=""
-            />
+
             <p className="mt-5 md:text-xl md:mx-10 md:block hidden">
               Staking lets you keep in your NFT assets on trading platforms and
               receive rewards without having to sell anything from your
@@ -423,6 +431,57 @@ const StartPage = () => {
           </section>
         </div> */}
       </div>
+      <footer className="bg-[#1E2F3F] mt-20 p-10">
+        <div className=" w-full  md:grid grid-cols-3 justify-between">
+          <div>
+            <p className="md:text-lg text-white font-medium">Useful Links</p>
+            <section className="flex gap-3  text-white font-medium">
+              <p>About</p>
+              <p>Testimonials</p>
+              <p>Benefits</p>
+              <p>Calculator</p>
+            </section>
+
+            <p className="md:text-lg mt-5 md:mt-10 text-white font-medium">Support</p>
+            <section className="flex gap-3  text-white font-medium">
+              <p>Email</p>
+              <p>Discord</p>
+              <p>Twitter</p>
+              <p>Telegram</p>
+            </section>
+          </div>
+          <section className="md:pt-20 pt-10 md:text-sm md:text-center text-white">
+            <p className="md:block hidden">© 2023 NFT Staking. All rights reserved.</p>
+            <p className="md:block hidden">Terms of Service | Privacy Policy</p>
+
+            <p className="mt-7 text-start md:ml-10 md:text-lg font-bold">
+              Subscribe
+            </p>
+            <div className="md:justify-center  w-full flex ">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                className="w-[60%] rounded-s-md text-black outline-none border-none py-2 px-2"
+              />
+              <button className="font-medium bg-blue-600 p-2 rounded-e-md">
+                Subscribe
+              </button>
+            </div>
+          </section>
+          <section className="md:mt-0 mt-5">
+            <img
+              className="rounded-md"
+              src="https://uploads-ssl.webflow.com/5f97f994ec86e8c0ddab6823/63288eed17c95ddd8dbf9abd_image2_2_11zon_5949c8907b839ff4c0e366a9696defd6_2000-p-1080.jpeg"
+              alt=""
+            />
+          </section>
+        </div>
+
+        <div className="text-center md:hidden block text-white mt-5 text-xm font-light">
+          <p>© 2023 NFT Staking. All rights reserved.</p>
+          <p>Terms of Service | Privacy Policy</p>
+        </div>
+      </footer>
     </div>
   );
 };
