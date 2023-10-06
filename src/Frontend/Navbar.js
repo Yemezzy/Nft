@@ -3,7 +3,12 @@ import { FaBars, FaWallet } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
+
+
+
+    
   const [wallet, SetWallet] = useState("");
   const [rest, SetRest] = useState("Connect Wallet");
 
@@ -53,15 +58,20 @@ const Navbar = () => {
             <Link to="/About ">
               <li>About</li>
             </Link>
-            <Link to="/About ">
-              <li>Benefits</li>
-            </Link>
-            <Link to="/About ">
+            <Link to="/calculator ">
               <li>Calculator</li>
             </Link>
-                  </ul>
-                  
-                  <FaBars className='md:hidden block'/>
+            <Link to="/get-started ">
+              <li className="md:px-5 md:py-2 md:bg-[#1E2F3F] text-white rounded-md">
+                Get Started
+              </li>
+            </Link>
+          </ul>
+
+
+              <FaBars className='md:hidden block'/>
+           
+
           {/* <button
           className="text-white font-bold bg-[#1E2F3F] flex gap-1 items-center p-2 text-sm rounded-md"
           onClick={requestAccount}
@@ -73,6 +83,7 @@ const Navbar = () => {
         </button> */}
         </section>
       </nav>
+
     </div>
   );
 }

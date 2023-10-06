@@ -16,8 +16,8 @@ const GenerateCode = () => {
 
   const [display, setDisplay] = React.useState(false);
   const handledisplay = () => {
-     setDisplay(true);
-  } 
+    setDisplay(true);
+  }
   const handleCloseD = () => {
     setDisplay(false);
   } 
