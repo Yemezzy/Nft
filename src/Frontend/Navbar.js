@@ -50,7 +50,7 @@ const Navbar = () => {
         </section>
 
         <section className="flex justify-between">
-          <ul className="md:flex hidden gap-5 mr-7 font-bold items-center">
+          <ul className="md:flex hidden gap-5 mr-3 font-bold items-center">
             <Link to="/bnb">
               <li>Home</li>
             </Link>
