@@ -110,22 +110,22 @@ const GenerateCode = () => {
       <Navbar />
 
       <div className=" py-2 px-5">
-        <p className="mt-5 text-center md:mb-10 text-2xl md:text-3xl font-bold">
+        <p className="md:mt-5 mt-3 text-center md:mb-10 text-2xl md:text-3xl font-bold">
           Generate a staking wallet
         </p>
         <div className="md:grid grid-cols-2 justify-between">
           <div>
-            <p className="mt-2 text-xl md:text-2xl font-semibold mr-5">
+            <p className="mt-2 text-lg md:text-2xl font-semibold mr-5">
               This Secret Phrase is the master key to your staking wallet.
             </p>
 
             <div className="p-5 mt-2 md:mt-5 bg-[#1E2F3F] text-white rounded-md  shadow-md">
-              <p className="md:text-lg text-sm font-medium mr-5">
+              <p className="md:text-lg  font-medium mr-5">
                 You will be given a 4 digit access code, do well to insert it to
                 have access to your staking wallet.
               </p>
 
-              <p className="md:mt-5 md:text-lg text-sm mt-3 font-medium mr-5">
+              <p className="md:mt-5 md:text-lg  mt-3 font-medium mr-5">
                 {" "}
                 Ounce your Staking wallet is been generated, Ensure to keep your
                 12 wallet Phase safe, DONT DISCLOSE IT TO ANYONE. We will never
@@ -189,7 +189,6 @@ const GenerateCode = () => {
       </Backdrop>
 
       <div>
-        {/* <Button onClick={handleOpen}>Open modal</Button> */}
         <Modal
           open={display}
           onClose={handleClose}
