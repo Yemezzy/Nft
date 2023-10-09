@@ -12,6 +12,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 const StartPage = () => {
+
   const [wallet, SetWallet] = useState("");
   const [rest, SetRest] = useState("Connect Wallet");
 
@@ -159,34 +160,21 @@ const StartPage = () => {
 
           <section>
             <p className="mt-5 md:text-lg md:mx-10">
-              In order to get rewards for staking your NFTs, you might need to
-              stake them for weeks or months, depending on the specific platform
-              and NFT collection.
+              NFT Staking in general works by locking your Non-Fungible
+              Tokens(NFT) in a smart contract. In return, you earn rewards, such
+              as tokens or other benefits. it's a way to put your NFT's to work
+              and pontentially earn more from them.
             </p>
             <p className="mt-5 md:text-lg md:mx-10">
-              Usually, your staking reward isn’t prorated, so if you pull your
-              NFT out early, you get nothing for all of the time that it was
-              staked up.
+              Our staking generates funds through various mechanisms, One common
+              way is by pooling the staked NFT's together and using them as
+              collateral for loans and other finical activites. The generated
+              funds are been distributed as rewards to the NFT stakers.
             </p>
 
-            <div className=" md:flex mt-5  gap-2  justify-between items-center md:mx-10">
-              <section className="flex flex-col mt-5 md:mt-0 items-center">
-                <FaWallet className="w-7 h-7 mb-5" />
-                <p className="md:text-lg">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam totam aliquid voluptatum deleniti fugit ut earum
-                  adipisci vero non aperiam!
-                </p>
-              </section>
-              <section className="flex flex-col mt-5 md:mt-0 items-center">
-                <FaWallet className="w-7 h-7 mb-5" />
-                <p className="md:text-lg">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam totam aliquid voluptatum deleniti fugit ut earum
-                  adipisci vero non aperiam!
-                </p>
-              </section>
-            </div>
+            <p className="mt-5 md:text-lg md:mx-10">
+              It's a way make your NFT's work for you and potentially earn more.
+            </p>
           </section>
         </div>
 
@@ -203,9 +191,12 @@ const StartPage = () => {
             <button className="md:mr-2 md:mb-0 mb-3 w-full md:w-fit text-sm font-semibold bg-blue-600 py-3 px-3 rounded-lg text-white">
               See our testimonials
             </button>
-            <button className="bg-white w-full md:w-fit text-sm font-semibold px-5 py-3 rounded-lg">
+            <Link
+              to="/get-started"
+              className="bg-white w-full md:w-fit text-sm font-semibold px-5 py-3 rounded-lg"
+            >
               Get Started
-            </button>
+            </Link>
           </section>
         </div>
 
@@ -214,14 +205,10 @@ const StartPage = () => {
             <p className="mt-5 text-3xl md:mx-10 font-bold ">REWARDS</p>
 
             <p className="mt-5 md:text-xl md:mx-10">
-              In order to get rewards for staking your NFTs, you might need to
-              stake them for weeks or months, depending on the specific platform
-              and NFT collection.
+             Unlike other staking platforms where a token will be generated as profits for staking, We made it easier where You’ll earn from the Chain/Network of your token.  
             </p>
             <p className="mt-5 md:text-xl md:mx-10">
-              Usually, your staking reward isn’t prorated, so if you pull your
-              NFT out early, you get nothing for all of the time that it was
-              staked up.
+Profits are being earned daily, The worth of the staked NFT determine the Reward. Your profits are being received in your staking wallet every 24hours.
             </p>
           </section>
 
@@ -432,7 +419,7 @@ const StartPage = () => {
           </section>
         </div> */}
       </div>
-<Footer/>
+      <Footer />
     </div>
   );
 };

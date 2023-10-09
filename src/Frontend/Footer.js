@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -8,25 +9,38 @@ const Footer = () => {
           <div>
             <p className="md:text-lg text-white font-medium">Useful Links</p>
             <section className="flex gap-3  text-white font-medium">
-              <p>About</p>
-              <p>Testimonials</p>
-              <p>Benefits</p>
-              <p>Calculator</p>
+              <Link to="/About">
+                <p>About</p>
+              </Link>
+              <Link to="/bnb">
+                <p>Testimonials</p>
+              </Link>
+              <Link to="/calculator">
+                <p>Calculator</p>
+              </Link>
             </section>
 
             <p className="md:text-lg mt-5 md:mt-10 text-white font-medium">
               Support
             </p>
             <section className="flex gap-3  text-white font-medium">
-              <p>Email</p>
-              <p>Discord</p>
-              <p>Twitter</p>
-              <p>Telegram</p>
+              <Link to="">
+                <p>Email</p>
+              </Link>
+              <Link to="">
+                <p>Discord</p>
+              </Link>
+              <Link to="">
+                <p>Twitter</p>
+              </Link>
+              <Link to="">
+                <p>Telegram</p>
+              </Link>
             </section>
           </div>
           <section className="md:pt-20 pt-10 md:text-sm md:text-center text-white">
             <p className="md:block hidden">
-              © 2023 NFT Staking. All rights reserved.
+              © 2021 NFT Staking. All rights reserved.
             </p>
             <p className="md:block hidden">Terms of Service | Privacy Policy</p>
 
@@ -52,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center md:hidden block text-white mt-5 text-xm font-light">
-          <p>© 2023 NFT Staking. All rights reserved.</p>
+          <p>© 2021 NFT Staking. All rights reserved.</p>
           <p>Terms of Service | Privacy Policy</p>
         </div>
       </footer>
