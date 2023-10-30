@@ -10,34 +10,134 @@ const [floor, setFloor] = useState("")
   const [chain, setChain] = useState("")
   
   const getResult = () => {
-        if ((chain == "Solana Chain") & floor <= 1) {
+        if ((chain == "Solana Chain") & floor <= 0.9) {
           setPrice("Not valued");
         }
-    if (chain == "Solana Chain" & floor >= 5) {
+        if ((chain == "Solana Chain") & floor >= 1) {
+          setPrice("0.02Sol");
+        }
+    if (chain == "Solana Chain" & floor >= 6) {
        setPrice("0.05Sol");
     }
     if (chain == "Solana Chain" & floor >= 10) {
-       setPrice("0.2Sol");
+       setPrice("0.09Sol");
     }
-    // if (chain == "Solana Chain" & floor == 1.2 || 1.3 || 1.4 || 1.5 ) {
-    //    setPrice("0.06Sol");
-    // }
-    // if (chain == "Solana Chain" & floor ==  1.6 || 1.7 || 1.8 || 1.9 ) {
-    //    setPrice("0.067Sol");
-    // }
     if (chain == "Solana Chain" & floor >= 20) {
-       setPrice("0.3Sol");
+       setPrice("0.13Sol");
+    }
+    if (chain == "Solana Chain" & floor >= 26) {
+       setPrice("0.17Sol");
     }
     if (chain == "Solana Chain" & floor >= 30) {
-       setPrice("0.5Sol");
+       setPrice("0.25Sol");
+    }
+    if (chain == "Solana Chain" & floor >= 36) {
+       setPrice("0.3Sol");
+    }
+    if (chain == "Solana Chain" & floor >= 40) {
+       setPrice("0.42Sol");
+    }
+    if ( floor == "") {
+      if (chain == "Solana Chain" & floor >= 46) {
+         setPrice("0.45Sol");
+      }
+      if (chain == "Solana Chain" & floor >= 50) {
+         setPrice("0.6Sol");
+      }
+       setPrice("");
     }
 
-    if ( floor == "") {
-       setPrice("0");
+
+        if ((chain == "Ethereum Chain") & (floor <= 0.01)) {
+          setPrice("Not valued");
+        }
+        if ((chain == "Ethereum Chain") & (floor >= 0.02)) {
+          setPrice("0.0008Eth");
+        }
+    if ((chain == "Ethereum Chain") & (floor >= 0.08)) {
+      setPrice("0.0013Eth");
     }
-    if ((chain == "Ethereum Chain") & (floor < 1)) {
-      setPrice("0.4Eth");
+    if ((chain == "Ethereum Chain") & (floor >= 0.13)) {
+      setPrice("0.0021Eth");
     }
+    if ((chain == "Ethereum Chain") & (floor >= 0.2)) {
+      setPrice("0.0032Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 0.27)) {
+      setPrice("0.0038Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 0.38)) {
+      setPrice("0.0042Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 0.5)) {
+      setPrice("0.005Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 0.63)) {
+      setPrice("0.0062Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 0.8)) {
+      setPrice("0.008Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 1)) {
+      setPrice("0.009Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 1.7)) {
+      setPrice("0.0096Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 2.2)) {
+      setPrice("0.015Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 2.8)) {
+      setPrice("0.017Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 3.5)) {
+      setPrice("0.022Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 5)) {
+      setPrice("0.025Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 6.9)) {
+      setPrice("0.031Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 10)) {
+      setPrice("0.038Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 15)) {
+      setPrice("0.042Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 17)) {
+      setPrice("0.046Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 20)) {
+      setPrice("0.05Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 25)) {
+      setPrice("0.055Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 27)) {
+      setPrice("0.057Eth");
+    }
+  
+    if ((chain == "Ethereum Chain") & (floor >= 30)) {
+      setPrice("0.062Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 40)) {
+      setPrice("0.07Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 60)) {
+      setPrice("0.1Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 80)) {
+      setPrice("0.2Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 90)) {
+      setPrice("0.25Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 100)) {
+      setPrice("0.31Eth");
+    }
+  
+    
     // if ( floor < 1) {
     //   setPrice("0.02Eth");
     // } else {
@@ -60,6 +160,29 @@ const [floor, setFloor] = useState("")
             We don’t take a cut. You’ll get back all your staked NFT's along
             with your profits.
           </p>
+
+          <div className="flex mt-10 md:mt-20 gap-7 md:gap-10">
+            <img
+              className="w-16 md:w-[20%]"
+              src="https://opensea.io/static/images/logos/opensea-logo.svg"
+              alt=""
+            />
+            <img
+              className="w-16 md:w-[20%]"
+              src="https://ord.cdn.magiceden.dev/static_resources/ME+logo.png"
+              alt=""
+            />
+            <img
+              className="w-16 md:w-[20%]"
+              src="https://imgs.blur.io/_assets/homepage/logo.png"
+              alt=""
+            />
+            <img
+              className="w-16 md:w-[20%]"
+              src="https://s2.coinmarketcap.com/static/img/coins/200x200/17081.png"
+              alt=""
+            />
+          </div>
         </section>
 
         <section className="flex justify-center">
@@ -80,7 +203,6 @@ const [floor, setFloor] = useState("")
               NFT Network/Chain
             </label>
             <select
-              
               onChange={(event) => setChain(event.target.value)}
               value={chain}
               name=""
@@ -90,8 +212,8 @@ const [floor, setFloor] = useState("")
               <option value="">--- Select Chain ---</option>
               <option value="Solana Chain">Solana Chain</option>
               <option value="Ethereum Chain">Ethereum Chain</option>
-              <option value="Polygon Chain">Polygon Chain</option>
-              <option value="Bnb Chain">Bnb Chain</option>
+              {/* <option value="Polygon Chain">Polygon Chain</option>
+              <option value="Bnb Chain">Bnb Chain</option> */}
             </select>
 
             <label htmlFor="" className="text-sm font-medium">
@@ -118,9 +240,9 @@ const [floor, setFloor] = useState("")
             <button
               onClick={getResult}
               type="text"
-              className="w-full bg-[#1E2F3F] text-white h-[3rem] -3 outline-none rounded-md px-2"
+              className="w-full uppercase font-semibold bg-[#1E2F3F] text-white h-[3rem] -3 outline-none rounded-md px-2"
             >
-              Earn Now
+              Calculate
             </button>
           </div>
         </section>

@@ -2,6 +2,7 @@ import React from 'react'
 import { FaBars, FaWallet } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Dropmenu from './Dropmenu';
 
 
 const Navbar = () => {
@@ -68,10 +69,10 @@ const Navbar = () => {
             </Link>
           </ul>
 
-
-              <FaBars className='md:hidden block'/>
-           
-
+          <div className='h-[1rem] flex'>
+            <Dropmenu className=" md:hidden block" />
+            
+          </div>
           {/* <button
           className="text-white font-bold bg-[#1E2F3F] flex gap-1 items-center p-2 text-sm rounded-md"
           onClick={requestAccount}
@@ -83,7 +84,6 @@ const Navbar = () => {
         </button> */}
         </section>
       </nav>
-
     </div>
   );
 }

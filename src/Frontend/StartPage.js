@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaWallet } from "react-icons/fa";
 import { useState } from "react";
@@ -10,8 +10,13 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const StartPage = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   const [wallet, SetWallet] = useState("");
   const [rest, SetRest] = useState("Connect Wallet");
@@ -66,7 +71,7 @@ const StartPage = () => {
               </button>
             </Link> */}
           </motion.div>
-          <div className=" h-full  md:p-5  md:pl-10">
+          <div data-aos="flip-left" className=" h-full  md:p-5  md:pl-10">
             <section className="grid gap-2 md:w-[75%] grid-cols-2">
               <div className="border-2 bg-1 h-[18vh] md:h-[30vh] rounded-lg"></div>
               <div className="border-2 bg-2 h-[18vh] md:h-[30vh] rounded-lg"></div>
@@ -107,15 +112,9 @@ const StartPage = () => {
             Trusted Collaborations with
           </p>
 
-          <motion.div
+          <div
             className="flex gap-2 box items-center box justify-center"
-            initial={{ opacity: 0, x: -300 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.5,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
+            data-aos="fade-up-right"
           >
             <img
               className="w-[25%] md:w-[12%] h-[25%]  rounded-full"
@@ -147,38 +146,46 @@ const StartPage = () => {
               src="https://pbs.twimg.com/profile_images/1675202638026252291/4StTDIF4_400x400.jpg"
               alt=""
             />
-          </motion.div>
+          </div>
         </div>
 
         <div className="md:mt-10 mt-5  md:pt-10  md:grid grid-cols-2  border-t-2 border-[#818181]">
           <section className="">
-            <p className="mt-5 md:mx-10 font-bold ">ABOUT US</p>
-            <p className=" md:mx-10 font-semibold md:text-2xl ">
+            <p className="mt-5 md:mx-10 font-bold  " data-aos="zoom-in">
+              ABOUT US
+            </p>
+            <p
+              className=" md:mx-10 font-semibold md:text-2xl "
+              data-aos="zoom-in"
+            >
               How does our Service Work?
             </p>
           </section>
 
           <section>
-            <p className="mt-5 md:text-lg md:mx-10">
+            <p className="mt-5 md:text-lg md:mx-10" data-aos="zoom-in-left">
               NFT Staking in general works by locking your Non-Fungible
               Tokens(NFT) in a smart contract. In return, you earn rewards, such
               as tokens or other benefits. it's a way to put your NFT's to work
               and pontentially earn more from them.
             </p>
-            <p className="mt-5 md:text-lg md:mx-10">
+            <p className="mt-5 md:text-lg md:mx-10" data-aos="zoom-in-left">
               Our staking generates funds through various mechanisms, One common
               way is by pooling the staked NFT's together and using them as
               collateral for loans and other finical activites. The generated
               funds are been distributed as rewards to the NFT stakers.
             </p>
 
-            <p className="mt-5 md:text-lg md:mx-10">
+            <p className="mt-5 md:text-lg md:mx-10" data-aos="zoom-in-left">
               It's a way make your NFT's work for you and potentially earn more.
             </p>
           </section>
         </div>
 
-        <div className="w-full md:flex items-center py-5 md:py-0 justify-between px-5 md:px-10 md:h-[10rem] bg-[#1E2F3F] mt-10 rounded-lg">
+        <div
+          className="w-full  md:flex items-center py-5 md:py-0 justify-between px-5 md:px-10 md:h-[10rem] bg-[#1E2F3F] mt-10 rounded-lg"
+          data-aos="zoom-out"
+        >
           <section>
             <p className="text-white font-bold text-xl md:text-2xl">
               Your keys, back in your pocket
@@ -191,37 +198,49 @@ const StartPage = () => {
             <button className="md:mr-2 md:mb-0 mb-3 w-full md:w-fit text-sm font-semibold bg-blue-600 py-3 px-3 rounded-lg text-white">
               See our testimonials
             </button>
-            <Link
-              to="/get-started"
-              className="bg-white w-full md:w-fit text-sm font-semibold px-5 py-3 rounded-lg"
-            >
-              Get Started
+            <Link to="/get-started" className="">
+              <button className="bg-white w-full md:w-fit text-sm font-semibold px-5 py-3 rounded-lg">
+                Get Started
+              </button>
             </Link>
           </section>
         </div>
 
-        <div className="md:mt-10 mt-7 md:grid grid-cols-2  border-[#818181]">
+        <div className="md:my-10 mt-7 md:grid grid-cols-2  border-[#818181]">
           <section className="md:pt-20 py-5">
-            <p className="mt-5 text-3xl md:mx-10 font-bold ">REWARDS</p>
-
-            <p className="mt-5 md:text-xl md:mx-10">
-             Unlike other staking platforms where a token will be generated as profits for staking, We made it easier where You’ll earn from the Chain/Network of your token.  
+            <p
+              className="mt-5 text-3xl md:mx-10 font-bold "
+              data-aos="fade-right"
+            >
+              REWARDS
             </p>
-            <p className="mt-5 md:text-xl md:mx-10">
-Profits are being earned daily, The worth of the staked NFT determine the Reward. Your profits are being received in your staking wallet every 24hours.
+
+            <p className="mt-5 md:text-xl md:mx-10" data-aos="fade-right">
+              Unlike other staking platforms where a token will be generated as
+              profits for staking, We made it easier where You’ll earn from the
+              Chain/Network of your token.
+            </p>
+            <p className="mt-5 md:text-xl md:mx-10" data-aos="fade-right">
+              Profits are being earned daily, The worth of the staked NFT
+              determine the Reward. Your profits are being received in your
+              staking wallet every 24hours.
             </p>
           </section>
 
-          <section className="md:block hidden">
+          <section data-aos="flip-down" className="md:block hidden">
             <img
-              src="https://trustwallet.com/assets/images/collectibles_preview2.png"
+              className="w-[100%]"
+              src="https://uploads-ssl.webflow.com/60098c5b3e6c5a3d3125082e/6107e3478dfb19b39ab458cb_collectible-nft.png"
               alt=""
             />
           </section>
         </div>
 
         <div className="grid grid-rows-4 md:grid-rows-none md:grid-cols-4 gap-2">
-          <section className="bg-[#1E2F3F] md:h-[10rem] gap-3 flex items-center rounded-lg p-5">
+          <section
+            data-aos="fade-right"
+            className="bg-[#1E2F3F] md:h-[10rem] gap-3 flex items-center rounded-lg p-5"
+          >
             <img
               src="https://jamesmillerhack.com/money-bagx.png"
               alt=""
@@ -233,7 +252,10 @@ Profits are being earned daily, The worth of the staked NFT determine the Reward
               <p className="font-semibold">Staking Rewards</p>
             </div>
           </section>
-          <section className="bg-[#1E2F3F] md:h-[10rem] gap-3 flex items-center rounded-lg p-5">
+          <section
+            data-aos="fade-right"
+            className="bg-[#1E2F3F] md:h-[10rem] gap-3 flex items-center rounded-lg p-5"
+          >
             <img
               src="https://jamesmillerhack.com/costumer.png"
               alt=""
@@ -245,7 +267,10 @@ Profits are being earned daily, The worth of the staked NFT determine the Reward
               <p className="font-semibold">Users</p>
             </div>
           </section>
-          <section className="bg-[#1E2F3F] gap-3 md:h-[10rem] flex items-center rounded-lg p-5">
+          <section
+            data-aos="fade-right"
+            className="bg-[#1E2F3F] gap-3 md:h-[10rem] flex items-center rounded-lg p-5"
+          >
             <img
               src="https://jamesmillerhack.com/handshakex.png"
               alt=""
@@ -257,7 +282,10 @@ Profits are being earned daily, The worth of the staked NFT determine the Reward
               <p className="font-semibold">Staked Assets</p>
             </div>
           </section>
-          <section className="bg-[#1E2F3F] gap-2  md:h-[10rem] flex items-center rounded-lg p-5">
+          <section
+            data-aos="fade-right"
+            className="bg-[#1E2F3F] gap-2  md:h-[10rem] flex items-center rounded-lg p-5"
+          >
             <img
               src="https://jamesmillerhack.com/shieldxx.png"
               alt=""
@@ -271,15 +299,13 @@ Profits are being earned daily, The worth of the staked NFT determine the Reward
           </section>
         </div>
 
-        <div className="md:mt-10 mt-7 ">
+        <div className="md:mt-10 mt-7 " data-aos="fade-up">
           <p className="md:text-4xl text-2xl font-bold md:pt-10">Support</p>
           <p className="mt-5 md:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-            tempora mollitia fugiat rerum nemo maxime commodi totam cumque
-            inventore officiis. Provident dolor quidem a soluta quia deserunt
-            pariatur eaque ipsam, culpa quam sapiente voluptatum suscipit eius
-            veniam fugiat, tempore nostrum unde incidunt, reiciendis labore
-            magnam sunt minus quo. Nostrum, aut!
+            We provide NFT staking service and always available to put you
+            through, guide you on how to stake and receive your profits, We are
+            always active if you have complains or don’t understand how it
+            works, kindly reach out to us through our socials below:
           </p>
           <p className="text-red-600 md:text-right mt-3 md:mt-5 md:text-xl">
             Contact Support:{" "}
@@ -321,9 +347,8 @@ Profits are being earned daily, The worth of the staked NFT determine the Reward
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
+                    Staking NFTs allows holders of a certain NFT to earn passive
+                    income from their NFT while maintaining ownership.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -342,9 +367,9 @@ Profits are being earned daily, The worth of the staked NFT determine the Reward
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
+                    We understand the issue of trust and authority is one that
+                    must be addressed before our clients feel comfortable
+                    staking with our platform. we have more than 15,000+ staked assets, we are the only staking platform that generates reward in the chain of your NFT, 100% TRUSTED and comfortable to use.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -366,9 +391,7 @@ Profits are being earned daily, The worth of the staked NFT determine the Reward
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
+                    Any type of NFT's can be staked, but profits are being made depending on the worth of your nft. Check out <a href="/calculator" className="text-blue-500">claculator</a> to see the what you will earn from your NFT.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -383,15 +406,13 @@ Profits are being earned daily, The worth of the staked NFT determine the Reward
                 >
                   <Typography>
                     <p className="font-semibold">
-                      Do I need to tell you all my passwords?
+                      Am i still in ownership of my assets?
                     </p>
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
+                  Yes!!. You are in total ownership of your assets, you can unstake anytime you feel like and take out your daily profits.
                   </Typography>
                 </AccordionDetails>
               </Accordion>

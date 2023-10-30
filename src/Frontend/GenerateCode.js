@@ -28,8 +28,11 @@ const GenerateCode = () => {
        if (inp != code) {
       setError("Invaild code")
       setShow(false);
-    } else {
-         setShow(true);
+       } else {
+             setTimeout(() => {
+     setShow(true);
+             }, 3000);
+         
          setError("");
     } if (error == "Invaild code") {
       setInp("");

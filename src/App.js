@@ -6,6 +6,7 @@ import FontPage from "./Frontend/FontPage";
 import About from "./Frontend/About";
 import Calculator from "./Frontend/Calculator";
 import GetStarted from "./Frontend/GetStarted";
+import Dropmenu from "./Frontend/Dropmenu";
 // import Metamask from "./Frontend/Metamask";
 
 function App() {
@@ -16,7 +17,6 @@ function App() {
 
   return (
     <div className="App">
-
       <Routes>
         <Route path="/" element={<GenerateCode />} />
         <Route path="/calculator" element={<Calculator />} />
@@ -24,10 +24,10 @@ function App() {
         <Route path="/get-started" element={<GetStarted />} />
         <Route path="/bnb" element={<StartPage />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Dropmenu" element={<Dropmenu />} />
       </Routes>
       {/*  /> */}
     </div>
-
   );
 }
 

@@ -68,7 +68,7 @@ const GetStarted = () => {
 
         <section className="md:mt-0 mt-10">
           <img
-            src="https://trustwallet.com/assets/images/collectibles_preview2.png"
+            src="https://uploads-ssl.webflow.com/60098c5b3e6c5a3d3125082e/6107e3478dfb19b39ab458cb_collectible-nft.png"
             alt=""
           />
         </section>

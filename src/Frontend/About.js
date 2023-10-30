@@ -60,10 +60,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mt-10 md:mt-32 px-5 md:px-10">
+      <div className="mt-10 md:mt-20 px-5 md:px-10">
         <p className=" font-medium text-blue-600">About Us</p>
         <p className="text-xl md:text-2xl font-semibold">
-          Making Sure Your Crypto is Always Yours
+          Our Goal
         </p>
 
         <p className="md:mt-3 mt-2 text-sm md:text-lg">
@@ -74,16 +74,9 @@ const About = () => {
           Technology at Carescout and a programmer at Fidelity Investments.
         </p>
 
-        <p className="md:mt-3 mt-2 text-sm md:text-lg">
-          CryptoAssetRecovery.com was created to empower cryptocurrency owners
-          to keep their assets safe. The company was founded in 2017 by Chris
-          Brooks, a seasoned professional with a background in technology and a
-          wealth of experience in the industry. He was previously the VP of
-          Technology at Carescout and a programmer at Fidelity Investments.
-        </p>
       </div>
 
-      <div className="md:mt-20 mt-10 px-5 md:px-10">
+      <div className=" mt-10 px-5 md:px-10">
         <p className=" font-medium text-blue-600">About Us</p>
         <p className="text-xl md:text-2xl font-semibold">About Our Founders</p>
 
@@ -95,13 +88,6 @@ const About = () => {
           Technology at Carescout and a programmer at Fidelity Investments.
         </p>
 
-        <p className="md:mt-3 mt-2 text-sm md:text-lg">
-          CryptoAssetRecovery.com was created to empower cryptocurrency owners
-          to keep their assets safe. The company was founded in 2017 by Chris
-          Brooks, a seasoned professional with a background in technology and a
-          wealth of experience in the industry. He was previously the VP of
-          Technology at Carescout and a programmer at Fidelity Investments.
-        </p>
       </div>
       {/* <div className="md:mt-10 mt-7">
         <p className="md:text-4xl text-3xl font-bold md:mx-10 md:font-semibold">
