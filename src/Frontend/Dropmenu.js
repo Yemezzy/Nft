@@ -72,7 +72,7 @@ const itemVariants: Variants = {
             </motion.li>
             <motion.li variants={itemVariants}>
               {" "}
-              <Link to="/About">About</Link>{" "}
+              <Link to="#">About</Link>{" "}
             </motion.li>
             <motion.li variants={itemVariants}>
               {" "}
