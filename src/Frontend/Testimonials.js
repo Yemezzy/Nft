@@ -24,7 +24,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="maquee md:hidden h-[20rem] ">
+        <div className="maquee block md:hidden h-[20rem] ">
           <ul className="maqueee-content flex gap-3 my-10">
             <li>
               {" "}

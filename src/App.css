@@ -59,6 +59,10 @@ menu{
   0%{transform: translateX(0);}
   100%{transform: translateX(-200vw);}
 }
+@keyframes scrolling {
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-200vw);}
+}
 .maquee-content{
   animation: scrolling 30s linear infinite;
 }
