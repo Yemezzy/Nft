@@ -10,7 +10,7 @@ import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import Navbar from './Navbar';
 // import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
@@ -27,7 +27,8 @@ const GenerateCode = () => {
   const handleShow = () => {
        if (inp != code) {
       setError("Invaild code")
-      setShow(false);
+         setShow(false);
+           
        } else {
              setTimeout(() => {
      setShow(true);
@@ -36,11 +37,14 @@ const GenerateCode = () => {
          setError("");
     } if (error == "Invaild code") {
       setInp("");
-      // setShow(false);
+      
     } 
  };
- const closeShow = () => {
-   setShow(false);
+  const closeShow = () => {
+       setTimeout(() => {
+         window.location.href = "/";
+       }, 2000);
+  
    
  };
 
@@ -198,7 +202,7 @@ const GenerateCode = () => {
           aria-labelledby="parent-modal-title"
           aria-describedby="parent-modal-description"
         >
-          <Box sx={{ ...style, width: 400 }}>
+          <Box sx={{ ...style, width: 370 }}>
             <h2 id="parent-modal-title" className="font-bold text-xl mb-5">
               {" "}
               WALLET ACCESS CODE
@@ -239,10 +243,11 @@ const GenerateCode = () => {
                   <Box sx={{ ...style, width: 300 }}>
                     <Typography
                       id="modal-modal-title"
-                      variant="h6"
+                      variant=""
                       component="h2"
+                      className="text-xl font-bold "
                     >
-                      Generate Staking Phase
+                      <p> Your staking wallet phrase</p>
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 1 }}>
                       <p className="flex items-center gap-2 pl-3 text-white text-sm rounded-lg bg-yellow-700 p-1">
@@ -250,30 +255,61 @@ const GenerateCode = () => {
                         <span>Never share your serect phase with anyone.</span>
                       </p>
 
-                      <section className="ml-12 justify-center  mt-16">
-                        <Box
-                          component="form"
-                          sx={{
-                            "& .MuiTextField-root": { m: 1, width: "25ch" },
-                          }}
-                          noValidate
-                          autoComplete="off"
-                        ></Box>
+                      <section className="ml-5 justify-center  mt-5">
+                        <ol className="grid w-full gap-2 grid-cols-2 list-decimal">
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            buddy
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                           genius
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            churn
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            whisper
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            curve
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            uniform
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            danger
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            guess
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            fruit
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            mountain
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            toilet
+                          </li>
+                          <li className="border w-[5rem] py-1 text-center rounded-md">
+                            civil
+                          </li>
+                        </ol>
                       </section>
 
-                      <p className="flex items-center text-center mt-16">
-                        <PiWarningFill className="w-5 h-5" />
-                        <span className="text-sm mt-5">
-                          Never share your serect phase with anyone, store it
+                      <p className="flex gap-2 items-center mt-3">
+                        <PiWarningFill className="w-3 h-3" />
+                        <span className="text-sm">
+                          Store your phase
                           securelly
                         </span>
                       </p>
 
-                      <p className="mt-5">
+                      <p className="mt-3">
                         <Button
                           onClick={closeShow}
                           variant="contained"
                           color="success"
+                          className='w-full'
                         >
                           Continue
                         </Button>

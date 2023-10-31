@@ -99,7 +99,7 @@ const StartPage = () => {
               APR.
             </p>
 
-            <Link to="/">
+            <Link to="/get-started">
               <button className="md:mt-10 mt-3 md:px-10 px-7 py-3 md:py-5 bg-[#1E2F3F] text-white text-xl rounded-lg">
                 Get Started
               </button>
@@ -196,9 +196,9 @@ const StartPage = () => {
           </section>
           <section className="md:mt-0 mt-3">
             <Link to="/Testimonials">
-            <button className="md:mr-2 md:mb-0 mb-3 w-full md:w-fit text-sm font-semibold bg-blue-600 py-3 px-3 rounded-lg text-white">
-              See our testimonials
-            </button>
+              <button className="md:mr-2 md:mb-0 mb-3 w-full md:w-fit text-sm font-semibold bg-blue-600 py-3 px-3 rounded-lg text-white">
+                See our testimonials
+              </button>
             </Link>
             <Link to="/get-started" className="">
               <button className="bg-white w-full md:w-fit text-sm font-semibold px-5 py-3 rounded-lg">

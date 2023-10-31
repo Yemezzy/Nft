@@ -71,10 +71,10 @@ const [floor, setFloor] = useState("")
       setPrice("0.0042Eth");
     }
     if ((chain == "Ethereum Chain") & (floor >= 0.5)) {
-      setPrice("0.005Eth");
+      setPrice("0.0057Eth");
     }
     if ((chain == "Ethereum Chain") & (floor >= 0.63)) {
-      setPrice("0.0062Eth");
+      setPrice("0.0067Eth");
     }
     if ((chain == "Ethereum Chain") & (floor >= 0.8)) {
       setPrice("0.008Eth");
