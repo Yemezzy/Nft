@@ -55,10 +55,13 @@ menu{
 
   /* background-color: black; */
 }
-@keyframes scrolling {
+@keyframes scrol {
   0%{transform: translateX(0);}
   100%{transform: translateX(-200vw);}
 }
 .maquee-content{
   animation: scrolling 30s linear infinite;
+}
+.maqueee-content{
+  animation: scrol 10s linear infinite;
 }
