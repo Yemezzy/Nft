@@ -38,14 +38,14 @@ const [floor, setFloor] = useState("")
     if (chain == "Solana Chain" & floor >= 40) {
        setPrice("0.42Sol");
     }
-    if ( floor == "") {
       if (chain == "Solana Chain" & floor >= 46) {
          setPrice("0.45Sol");
       }
-      if (chain == "Solana Chain" & floor >= 50) {
-         setPrice("0.6Sol");
-      }
-       setPrice("");
+    if ((chain == "Solana Chain") & (floor <= 60)) {
+      setPrice("0.67Sol");
+    }
+    if ((chain == "Solana Chain") & (floor >= 61)) {
+      setPrice("Maximum amount is 60Sol");
     }
 
 
@@ -134,8 +134,11 @@ const [floor, setFloor] = useState("")
     if ((chain == "Ethereum Chain") & (floor >= 90)) {
       setPrice("0.25Eth");
     }
-    if ((chain == "Ethereum Chain") & (floor >= 100)) {
+    if ((chain == "Ethereum Chain") & (floor <= 100)) {
       setPrice("0.31Eth");
+    }
+    if ((chain == "Ethereum Chain") & (floor >= 101)) {
+      setPrice("Maximum amount is 100Eth");
     }
   
     
