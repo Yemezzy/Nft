@@ -49,3 +49,16 @@ menu{
     transform: rotate(10000deg);
   }
 } */
+
+.maquee{
+  overflow: hidden;
+
+  /* background-color: black; */
+}
+@keyframes scrolling {
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-200vw);}
+}
+.maquee-content{
+  animation: scrolling 30s linear infinite;
+}

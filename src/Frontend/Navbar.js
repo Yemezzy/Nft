@@ -52,7 +52,7 @@ const Navbar = () => {
 
         <section className="flex justify-between">
           <ul className="md:flex hidden gap-5 mr-3 font-bold items-center">
-            <Link to="/bnb">
+            <Link to="/">
               <li>Home</li>
             </Link>
 
@@ -62,6 +62,9 @@ const Navbar = () => {
             <Link to="/calculator ">
               <li>Calculator</li>
             </Link>
+            <Link to="/Testimonials ">
+              <li>Testimonials</li>
+            </Link>
             <Link to="/get-started ">
               <li className="md:px-5 md:py-2 md:bg-[#1E2F3F] text-white rounded-md">
                 Get Started
@@ -69,9 +72,8 @@ const Navbar = () => {
             </Link>
           </ul>
 
-          <div className='h-[1rem] flex'>
-            <Dropmenu className=" md:hidden block" />
-            
+          <div className="h-[1rem]   md:hidden flex">
+            <Dropmenu className=" block" />
           </div>
           {/* <button
           className="text-white font-bold bg-[#1E2F3F] flex gap-1 items-center p-2 text-sm rounded-md"

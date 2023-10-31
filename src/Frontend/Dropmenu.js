@@ -25,10 +25,10 @@ const itemVariants: Variants = {
       >
         <motion.button
           whileTap={{ scale: 0.97 }}
-                  onClick={() => setIsOpen(!isOpen)}
-                  className='flex items-center gap-3'
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center gap-3"
         >
-          <p className='mb-1 ml-5 font-bold'>menu</p>
+          <p className="mb-1 ml-5 font-bold">menu</p>
           <motion.div
             variants={{
               open: { rotate: 180 },
@@ -42,7 +42,7 @@ const itemVariants: Variants = {
             </svg>
           </motion.div>
         </motion.button>
-        
+
         <motion.ul
           variants={{
             open: {
@@ -68,15 +68,19 @@ const itemVariants: Variants = {
         >
           <div className="mt-5 p-5 text-white font-bold bg-black">
             <motion.li variants={itemVariants}>
-              <Link to="/bnb">Home</Link>
+              <Link to="/">Home</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
               {" "}
-              <Link to="#">About</Link>{" "}
+              <Link to="/About">About</Link>{" "}
             </motion.li>
             <motion.li variants={itemVariants}>
               {" "}
               <Link to="/calculator">Calculator</Link>
+            </motion.li>
+            <motion.li variants={itemVariants}>
+              {" "}
+              <Link to="/Testimonials">Testimonials</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
               <Link to="/get-started ">

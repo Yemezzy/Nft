@@ -195,9 +195,11 @@ const StartPage = () => {
             </p>
           </section>
           <section className="md:mt-0 mt-3">
+            <Link to="/Testimonials">
             <button className="md:mr-2 md:mb-0 mb-3 w-full md:w-fit text-sm font-semibold bg-blue-600 py-3 px-3 rounded-lg text-white">
               See our testimonials
             </button>
+            </Link>
             <Link to="/get-started" className="">
               <button className="bg-white w-full md:w-fit text-sm font-semibold px-5 py-3 rounded-lg">
                 Get Started
@@ -218,7 +220,7 @@ const StartPage = () => {
             <p className="mt-5 md:text-xl md:mx-10" data-aos="fade-right">
               Unlike other staking platforms where a token will be generated as
               profits for staking, We made it easier where You’ll earn from the
-              Chain/Network of your token.
+              Chain/Network of your NFT.
             </p>
             <p className="mt-5 md:text-xl md:mx-10" data-aos="fade-right">
               Profits are being earned daily, The worth of the staked NFT
@@ -369,7 +371,10 @@ const StartPage = () => {
                   <Typography>
                     We understand the issue of trust and authority is one that
                     must be addressed before our clients feel comfortable
-                    staking with our platform. we have more than 15,000+ staked assets, we are the only staking platform that generates reward in the chain of your NFT, 100% TRUSTED and comfortable to use.
+                    staking with our platform. we have more than 15,000+ staked
+                    assets, we are the only staking platform that generates
+                    reward in the chain of your NFT, 100% TRUSTED and
+                    comfortable to use.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -391,7 +396,12 @@ const StartPage = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    Any type of NFT's can be staked, but profits are being made depending on the worth of your nft. Check out <a href="/calculator" className="text-blue-500">claculator</a> to see the what you will earn from your NFT.
+                    Any type of NFT's can be staked, but profits are being made
+                    depending on the worth of your nft. Check out{" "}
+                    <a href="/calculator" className="text-blue-500">
+                      claculator
+                    </a>{" "}
+                    to see the what you will earn from your NFT.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -412,7 +422,9 @@ const StartPage = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                  Yes!!. You are in total ownership of your assets, you can unstake anytime you feel like and take out your daily profits.
+                    Yes!!. You are in total ownership of your assets, you can
+                    unstake anytime you feel like and take out your daily
+                    profits.
                   </Typography>
                 </AccordionDetails>
               </Accordion>

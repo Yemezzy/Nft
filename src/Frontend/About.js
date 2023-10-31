@@ -18,7 +18,7 @@ const About = () => {
           </p>
           <p className="md:text-lg text-center md:mt-5 md:px-[20%]">
             Our philosophy is simple — hire a small team of passionate people
-            motivated to add value and foster a culture that empowers the crypto
+            motivated to add value and foster a culture that empowers the NFT
             community.
           </p>
         </div>
@@ -28,16 +28,14 @@ const About = () => {
             <div className="md:w-[7rem] w-[5rem] flex flex-col justify-center items-center h-[5rem] md:h-[7rem] rounded-full border- border-black">
               <img
                 className="w-full h-full rounded-full"
-                src="https://media.discordapp.net/attachments/1148415728937083002/1159207022005330010/IMG_0784.png?ex=65302eab&is=651db9ab&hm=56e9303dfaf4963a23ad1afa5d2577984b6e1964279173c93a01f24045c1c3d7&=&width=448&height=423"
+                src="https://img-cdn.magiceden.dev/rs:fill:640:0:0/plain/https://nftstorage.link/ipfs/bafkreihtudxcv5vehqtamtibxfovqyfwqcsu53vi6mhzqpmj2rsjr677li"
                 alt=""
               />
             </div>
-            <p className="text-center mt-2 font-bold">Well's Gabi</p>
-            <p className="text-center text-sm font-medium">
-              Chief Technology Officer
-            </p>
-            <p className="mx-5 text-sm font-light md:mt-2">
-              Lead of technology and growth at CAR, UVM Comp Sci.
+            <p className="text-center mt-2 font-bold">Jimmy Dev</p>
+            <p className="text-center text-sm font-medium">Founder</p>
+            <p className="mx-5 text-sm font-light md:mt-">
+              Web3 Enthusiast, Verified Forex, Crypto and NFT trader.
             </p>
           </section>
 
@@ -45,16 +43,14 @@ const About = () => {
             <div className="md:w-[7rem] w-[5rem] h-[5rem] md:h-[7rem] rounded-full text-center border- border-black">
               <img
                 className="w-full h-full rounded-full"
-                src="https://media.discordapp.net/attachments/1148415728937083002/1159207036094005388/IMG_0774.jpg?ex=65302eae&is=651db9ae&hm=e3d85f1c55eb13cc9ddac5220c05adc4b23f090b78741a2c8d575b6685e41dcd&=&width=317&height=423"
+                src="https://res.cloudinary.com/art-blocks/image/fetch/f_auto,c_limit,w_96,q_auto/https://d2ekshiy7r5vl7.cloudfront.net/users/1687473064-emily_xie_mem_qilin_profile.png"
                 alt=""
               />
             </div>
-            <p className="text-center mt-2 font-bold">Yel'Mee</p>
-            <p className="text-center text-sm font-medium">
-              Chief Technology Officer
-            </p>
-            <p className="mx-5 font-light md:mt-2 text-sm">
-              Lead of technology and growth at CAR, UVM Comp Sci.
+            <p className="text-center mt-2 font-bold">Louis Emily</p>
+            <p className="text-center text-sm font-medium">Co-Founder</p>
+            <p className="mx-5 font-light text-sm">
+              Founder of Memories of Qilin
             </p>
           </section>
         </div>
@@ -62,18 +58,17 @@ const About = () => {
 
       <div className="mt-10 md:mt-20 px-5 md:px-10">
         <p className=" font-medium text-blue-600">About Us</p>
-        <p className="text-xl md:text-2xl font-semibold">
-          Our Goal
-        </p>
+        <p className="text-xl md:text-2xl font-semibold">Our Goal</p>
 
         <p className="md:mt-3 mt-2 text-sm md:text-lg">
-          CryptoAssetRecovery.com was created to empower cryptocurrency owners
-          to keep their assets safe. The company was founded in 2017 by Chris
-          Brooks, a seasoned professional with a background in technology and a
-          wealth of experience in the industry. He was previously the VP of
-          Technology at Carescout and a programmer at Fidelity Investments.
+          We are a staking platform, trying to make it easier for holders of
+          unique nft collections benefit from their NFT. Most people in the NFT
+          space intend to hold their assets for a long period of time, instead
+          of just leaving your nft domant, we generate this platform to help you
+          earn from it daily. Unlike other staking platforms where tokens are
+          been generated as profits, here profits are been made in the
+          network/chain of your nft which makes it easier for withdrawal.
         </p>
-
       </div>
 
       <div className=" mt-10 px-5 md:px-10">
@@ -81,13 +76,13 @@ const About = () => {
         <p className="text-xl md:text-2xl font-semibold">About Our Founders</p>
 
         <p className="md:mt-3 mt-2 text-sm md:text-lg">
-          CryptoAssetRecovery.com was created to empower cryptocurrency owners
-          to keep their assets safe. The company was founded in 2017 by Chris
-          Brooks, a seasoned professional with a background in technology and a
-          wealth of experience in the industry. He was previously the VP of
-          Technology at Carescout and a programmer at Fidelity Investments.
+          We have been in the web3 space for up to 7 years now, Also i have
+          created and Collaborated with many successful NFTs community, We
+          thought of this and realized it is the first in the space and will
+          also be the best. I and my Team have been on this for 2 years now,
+          trying to gather investors from every part of the globe. We are happy
+          to finally lunch our official web. Safe staking!, Guaranteed Profits!.
         </p>
-
       </div>
       {/* <div className="md:mt-10 mt-7">
         <p className="md:text-4xl text-3xl font-bold md:mx-10 md:font-semibold">

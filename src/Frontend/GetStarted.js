@@ -16,7 +16,7 @@ const GetStarted = () => {
 
           <ul className="list-disc md:ml-10 ml-4 mt-3 md:mt-5">
             <li className="md:mb-2 md:text-xl font-medium">
-              <Link to="/" className=" underline text-blue-600">
+              <Link to="/generate-staking-wallet" className=" underline text-blue-600">
                 Generate a Staking Wallet.
               </Link>
             </li>

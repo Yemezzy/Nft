@@ -7,6 +7,7 @@ import About from "./Frontend/About";
 import Calculator from "./Frontend/Calculator";
 import GetStarted from "./Frontend/GetStarted";
 import Dropmenu from "./Frontend/Dropmenu";
+import Testimonials from "./Frontend/Testimonials";
 // import Metamask from "./Frontend/Metamask";
 
 function App() {
@@ -18,13 +19,14 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<GenerateCode />} />
+        <Route path="/generate-staking-wallet" element={<GenerateCode />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/Home" element={<FontPage />} />
         <Route path="/get-started" element={<GetStarted />} />
-        <Route path="/bnb" element={<StartPage />} />
+        <Route path="/" element={<StartPage />} />
         <Route path="/About" element={<About />} />
         <Route path="/Dropmenu" element={<Dropmenu />} />
+        <Route path="/Testimonials" element={<Testimonials />} />
       </Routes>
       {/*  /> */}
     </div>

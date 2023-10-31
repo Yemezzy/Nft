@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Calculator = () => {
 
@@ -244,6 +245,12 @@ const [floor, setFloor] = useState("")
             >
               Calculate
             </button>
+
+            <Link to="/get-started">
+              <p className="uppercase text-blue-500 text-xs mt-2 font-bold text-center underline">
+                stake now
+              </p>
+            </Link>
           </div>
         </section>
       </div>
