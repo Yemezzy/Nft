@@ -78,7 +78,7 @@ const StartPage = () => {
               <div className="border-2 bg-3 h-[18vh] md:h-[30vh] rounded-lg"></div>
               <div className="border-2 bg-4 h-[18vh] md:h-[30vh] rounded-lg"></div>
             </section>
-            <div className="sticky md:block hidden bg-5 w-[35%] h-[18vh] md:h-[30vh] rounded-lg jjj"></div>
+            
           </div>
 
           <motion.div
